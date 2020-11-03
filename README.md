@@ -1,6 +1,6 @@
 ## Accounting App
 
-Test application for accounting
+App to keep track of income, expenditure, profit and loss
 
 #### License
 

@@ -10,8 +10,8 @@ from accounting_app import __version__ as version
 setup(
 	name='accounting_app',
 	version=version,
-	description='Test application for accounting',
-	author='ganga@erpnext.com',
+	description='App to keep track of income, expenditure, profit and loss',
+	author='Ganga Manoj',
 	author_email='ganga@erpnext.com',
 	packages=find_packages(),
 	zip_safe=False,

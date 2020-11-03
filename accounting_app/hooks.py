@@ -4,8 +4,8 @@ from . import __version__ as app_version
 
 app_name = "accounting_app"
 app_title = "Accounting App"
-app_publisher = "ganga@erpnext.com"
-app_description = "Test application for accounting"
+app_publisher = "Ganga Manoj"
+app_description = "App to keep track of income, expenditure, profit and loss"
 app_icon = "octicon octicon-file-directory"
 app_color = "grey"
 app_email = "ganga@erpnext.com"
