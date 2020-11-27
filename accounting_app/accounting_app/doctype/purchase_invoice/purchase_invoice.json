@@ -7,7 +7,10 @@
  "engine": "InnoDB",
  "field_order": [
   "supplier",
+  "company",
+  "posting_date",
   "items",
+  "grand_total",
   "amended_from"
  ],
  "fields": [
@@ -34,12 +37,31 @@
    "options": "Purchase Invoice",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2020-11-09 20:45:52.195981",
+ "modified": "2020-11-24 22:21:54.753380",
  "modified_by": "Administrator",
  "module": "Accounting App",
  "name": "Purchase Invoice",

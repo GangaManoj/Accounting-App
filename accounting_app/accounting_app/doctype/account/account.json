@@ -8,6 +8,7 @@
  "field_order": [
   "account_name",
   "account_type",
+  "company",
   "lft",
   "rgt",
   "is_group",
@@ -19,7 +20,8 @@
    "fieldname": "account_type",
    "fieldtype": "Select",
    "label": "Account Type",
-   "options": "\nAccumulated Depreciation\nAsset Received But Not Billed\nBank\nCash\nChargeable\nCapital Work in Progress\nCost of Goods Sold\nDepreciation\nEquity\nExpense Account\nExpenses Included In Asset Valuation\nExpenses Included In Valuation\nFixed Asset\nIncome Account\nPayable\nReceivable\nRound Off\nStock\nStock Adjustment\nStock Received But Not Billed\nService Received But Not Billed\nTax\nTemporary"
+   "options": "\nAccumulated Depreciation\nAsset Received But Not Billed\nBank\nCash\nChargeable\nCapital Work in Progress\nCost of Goods Sold\nDepreciation\nEquity\nExpense Account\nExpenses Included In Asset Valuation\nExpenses Included In Valuation\nFixed Asset\nIncome Account\nPayable\nReceivable\nRound Off\nStock\nStock Adjustment\nStock Received But Not Billed\nService Received But Not Billed\nTax\nTemporary",
+   "reqd": 1
   },
   {
    "fieldname": "lft",
@@ -62,12 +64,18 @@
    "label": "Account Name",
    "reqd": 1,
    "unique": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_tree": 1,
  "links": [],
- "modified": "2020-11-06 00:00:04.649266",
+ "modified": "2020-11-24 20:28:57.496467",
  "modified_by": "Administrator",
  "module": "Accounting App",
  "name": "Account",

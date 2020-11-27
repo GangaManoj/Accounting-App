@@ -1,14 +1,17 @@
 {
  "actions": [],
  "autoname": "JV-.#####",
- "creation": "2020-11-07 00:28:42.501114",
+ "creation": "2020-11-11 19:47:45.276299",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "posting_date",
+  "company",
   "accounting_entries",
-  "amended_from"
+  "amended_from",
+  "total_debit",
+  "total_credit"
  ],
  "fields": [
   {
@@ -16,6 +19,13 @@
    "fieldtype": "Date",
    "in_list_view": 1,
    "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
    "reqd": 1
   },
   {
@@ -33,12 +43,24 @@
    "options": "Journal Entry",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "total_debit",
+   "fieldtype": "Currency",
+   "label": "Total Debit",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_credit",
+   "fieldtype": "Currency",
+   "label": "Total Credit",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2020-11-09 20:45:11.766888",
+ "modified": "2020-11-24 22:35:21.279180",
  "modified_by": "Administrator",
  "module": "Accounting App",
  "name": "Journal Entry",

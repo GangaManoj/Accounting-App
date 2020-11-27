@@ -23,18 +23,22 @@
   {
    "fieldname": "debit",
    "fieldtype": "Currency",
-   "label": "Debit"
+   "in_list_view": 1,
+   "label": "Debit",
+   "reqd": 1
   },
   {
    "fieldname": "credit",
    "fieldtype": "Currency",
-   "label": "Credit"
+   "in_list_view": 1,
+   "label": "Credit",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2020-11-07 00:19:32.258926",
+ "modified": "2020-11-11 19:51:47.910475",
  "modified_by": "Administrator",
  "module": "Accounting App",
  "name": "Journal Entry Account",

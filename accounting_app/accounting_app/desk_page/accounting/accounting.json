@@ -1,0 +1,39 @@
+{
+ "cards": [
+  {
+   "hidden": 0,
+   "label": "Transactions",
+   "links": "[\n    {\n        \"description\": \"Sales Invoice\",\n        \"label\": \"Sales Invoice\",\n        \"name\": \"Sales Invoice\",\n        \"type\": \"doctype\"\n    },\n    {\n        \"description\": \"Purchase Invoice\",\n        \"label\": \"Purchase Invoice\",\n        \"name\": \"Purchase Invoice\",\n        \"type\": \"doctype\"\n    },\n    {\n        \"description\": \"Journal Entry\",\n        \"label\": \"Journal Entry\",\n        \"name\": \"Journal Entry\",\n        \"type\": \"doctype\"\n    }\n]"
+  },
+  {
+   "hidden": 0,
+   "label": "Masters",
+   "links": "[\n    {\n        \"description\": \"List of items\",\n        \"label\": \"Item\",\n        \"name\": \"Item\",\n        \"type\": \"doctype\"\n    },\n    {\n        \"description\": \"List of customers\",\n        \"label\": \"Customer\",\n        \"name\": \"Customer\",\n        \"type\": \"doctype\"\n    },\n    {\n        \"description\": \"List of suppliers\",\n        \"label\": \"Supplier\",\n        \"name\": \"Supplier\",\n        \"type\": \"doctype\"\n    },\n    {\n        \"description\": \"List/tree of accounts\",\n        \"label\": \"Account\",\n        \"name\": \"Account\",\n        \"type\": \"doctype\"\n    }\n]"
+  },
+  {
+   "hidden": 0,
+   "label": "Reports",
+   "links": "[\n    {\n        \"doctype\" : \"Ledger Entry\",\n        \"is_query_report\" : true,\n        \"description\": \"General Ledger Report\",\n        \"label\": \"General Ledger Report\",\n        \"name\": \"General Ledger Report\",\n        \"type\": \"report\"\n    },\n    {   \n        \"doctype\" : \"Ledger Entry\",\n        \"is_query_report\" : true,\n        \"description\": \"Profit and Loss Report\",\n        \"label\": \"Profit and Loss\",\n        \"name\": \"Profit and Loss\",\n        \"type\": \"report\"\n    },\n    {\n        \"doctype\" : \"Ledger Entry\",\n        \"is_query_report\" : true,\n        \"description\": \"Balance Sheet\",\n        \"label\": \"Balance Sheet\",\n        \"name\": \"Balance Sheet\",\n        \"type\": \"report\"\n    }\n]"
+  }
+ ],
+ "category": "Modules",
+ "charts": [],
+ "creation": "2020-11-24 20:23:56.225175",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Desk Page",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "idx": 0,
+ "is_standard": 1,
+ "label": "Accounting",
+ "modified": "2020-11-24 20:52:43.400863",
+ "modified_by": "Administrator",
+ "module": "Accounting App",
+ "name": "Accounting",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 0,
+ "shortcuts": []
+}

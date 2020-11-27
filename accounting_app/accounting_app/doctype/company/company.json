@@ -1,48 +1,27 @@
 {
  "actions": [],
- "autoname": "field:item_name",
- "creation": "2020-11-05 23:48:32.660643",
+ "autoname": "field:company_name",
+ "creation": "2020-11-20 14:43:06.098618",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "item_name",
-  "description",
-  "rate",
-  "units"
+  "company_name"
  ],
  "fields": [
   {
-   "fieldname": "item_name",
+   "fieldname": "company_name",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "Name",
-   "reqd": 1,
    "unique": 1
-  },
-  {
-   "fieldname": "description",
-   "fieldtype": "Text",
-   "label": "Description"
-  },
-  {
-   "fieldname": "rate",
-   "fieldtype": "Currency",
-   "label": "Rate",
-   "reqd": 1
-  },
-  {
-   "fieldname": "units",
-   "fieldtype": "Int",
-   "label": "Units"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2020-11-25 22:56:53.698309",
+ "modified": "2020-11-20 14:43:06.098618",
  "modified_by": "Administrator",
  "module": "Accounting App",
- "name": "Item",
+ "name": "Company",
  "owner": "Administrator",
  "permissions": [
   {

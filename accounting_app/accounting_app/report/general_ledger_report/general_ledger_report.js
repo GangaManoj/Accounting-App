@@ -4,6 +4,15 @@
 
 frappe.query_reports["General Ledger Report"] = {
 	"filters": [
-
+		{
+			"fieldname" : "from",
+			"label" : __("From"),
+			"fieldtype" : "Date"
+		},
+		{
+			"fieldname" : "to",
+			"label" : __("To"),
+			"fieldtype" : "Date"
+		}
 	]
 };

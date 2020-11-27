@@ -22,6 +22,7 @@
    "unique": 1
   },
   {
+   "default": "1",
    "fieldname": "quantity",
    "fieldtype": "Int",
    "in_list_view": 1,
@@ -29,6 +30,7 @@
    "reqd": 1
   },
   {
+   "fetch_from": "item.rate",
    "fieldname": "rate",
    "fieldtype": "Currency",
    "in_list_view": 1,
@@ -41,14 +43,13 @@
    "fieldtype": "Currency",
    "in_list_view": 1,
    "label": "Amount",
-   "read_only": 1,
-   "reqd": 1
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2020-11-06 20:26:35.178348",
+ "modified": "2020-11-25 22:59:49.413611",
  "modified_by": "Administrator",
  "module": "Accounting App",
  "name": "Purchase Invoice Item",

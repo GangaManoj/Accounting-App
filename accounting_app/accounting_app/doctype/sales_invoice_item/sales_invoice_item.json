@@ -22,6 +22,7 @@
    "unique": 1
   },
   {
+   "default": "1",
    "fieldname": "quantity",
    "fieldtype": "Int",
    "in_list_view": 1,
@@ -29,6 +30,7 @@
    "reqd": 1
   },
   {
+   "fetch_from": "item.rate",
    "fieldname": "rate",
    "fieldtype": "Currency",
    "in_list_view": 1,
@@ -47,7 +49,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2020-11-06 20:50:31.230295",
+ "modified": "2020-11-25 22:52:52.300664",
  "modified_by": "Administrator",
  "module": "Accounting App",
  "name": "Sales Invoice Item",

@@ -8,6 +8,8 @@
  "field_order": [
   "posting_date",
   "account",
+  "company",
+  "fiscal_year",
   "debit",
   "credit",
   "voucher_type",
@@ -18,16 +20,14 @@
    "fieldname": "posting_date",
    "fieldtype": "Date",
    "in_list_view": 1,
-   "label": "Posting Date",
-   "reqd": 1
+   "label": "Posting Date"
   },
   {
    "fieldname": "account",
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Account",
-   "options": "Account",
-   "reqd": 1
+   "options": "Account"
   },
   {
    "fieldname": "debit",
@@ -50,11 +50,23 @@
    "fieldtype": "Dynamic Link",
    "label": "Voucher Number",
    "options": "voucher_type"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "fiscal_year",
+   "fieldtype": "Data",
+   "label": "Fiscal Year"
   }
  ],
+ "in_create": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2020-11-07 18:26:21.086916",
+ "modified": "2020-11-22 22:20:42.953002",
  "modified_by": "Administrator",
  "module": "Accounting App",
  "name": "Ledger Entry",
