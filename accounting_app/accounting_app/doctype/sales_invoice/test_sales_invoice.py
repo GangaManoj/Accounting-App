@@ -14,11 +14,11 @@ class TestSalesInvoice(unittest.TestCase):
 		before_sales_invoice = frappe.db.count('Ledger Entry')
 		doc = frappe.get_doc({
 			"doctype": "Sales Invoice",
-			"customer": "Ganga Manoj",
+			"customer": "Dhanya Aleena",
 			"company": "Gada Electronics",
 			"posting_date": "2020-11-20",
 			"items" : [{
-				"item": "Moto x4",
+				"item": "xyz",
 				"quantity": 2,
 			}]
 		})
@@ -31,15 +31,15 @@ class TestSalesInvoice(unittest.TestCase):
 	def test_total(self):
 		doc = frappe.get_doc({
 			"doctype": "Sales Invoice",
-			"customer": "Ganga Manoj",
+			"customer": "Dhanya Aleena",
 			"company": "Gada Electronics",
 			"posting_date": "2020-11-20",
 			"items" : [{
-				"item": "Moto x4",
+				"item": "xyz",
 				"quantity": 2,
 			},
 			{
-				"item": "Oneplus 7",
+				"item": "abc",
 				"quantity": 3,
 			}]
 		})

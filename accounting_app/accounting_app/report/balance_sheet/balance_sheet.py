@@ -21,7 +21,7 @@ def get_columns(filters):
 		"width" : 150
 	},
 	{
-		"fieldname" : "debit",
+		"fieldname" : "amount",
 		"label" : _("Amount"),
 		"fieldtype" : "Currency",
 		"width" : 150
@@ -33,8 +33,37 @@ def get_data(filters):
 	data = []
 	assets = get_descendants_of("Account", "Application of Funds (Assets)") 
 	liabilities = get_descendants_of("Account", "Source of Funds (Liabilities)")
-	assets_and_liabilities = assets + liabilities
+	indent = 0
 
-	data = frappe.get_all('Ledger Entry', fields = ['account', 'debit'], filters = {'account' : ["in", assets_and_liabilities]})
+	parent_assets = {
+		'indent' : indent,
+		'account' : "Assets"
+	}
+	data.append(parent_assets)
+	indent += 1
+	for ledger_entry in frappe.get_all('Ledger Entry', fields = ['sum(credit) as amount','account'], filters = {'account' : ["in", assets]}, group_by = 'account'):
+		report_entry = {
+			'indent' : indent,
+			'account' : ledger_entry.account,
+			'amount' : ledger_entry.amount,
+			'parent_account' : parent_assets['account']
+		}
+		data.append(report_entry)
+
+	indent = 0
+	parent_liabilities = {
+		'indent' : indent,
+		'account' : "Liabilities"
+	}
+	data.append(parent_liabilities)
+	indent += 1
+	for ledger_entry in frappe.get_all('Ledger Entry', fields = ['sum(debit) as amount','account'], filters = {'account' :["in", liabilities]}, group_by = 'account'):
+		report_entry = {
+			'indent' : indent,
+			'account' : ledger_entry.account,
+			'amount' : ledger_entry.amount,
+			'parent_account' : parent_liabilities['account']
+		}
+		data.append(report_entry)
 
 	return data
