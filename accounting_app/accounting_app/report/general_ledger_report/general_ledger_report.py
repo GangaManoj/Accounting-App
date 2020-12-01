@@ -68,7 +68,7 @@ def get_columns(filters):
 		"fieldname" : "balance",
 		"label" : _("Balance"),
 		"fieldtype" : "Currency",
-		"width" : 258
+		"width" : 130
 	}]
 
 	return columns
