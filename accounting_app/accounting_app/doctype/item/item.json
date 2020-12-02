@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "autoname": "field:item_name",
  "creation": "2020-11-05 23:48:32.660643",
  "doctype": "DocType",
@@ -7,9 +8,11 @@
  "engine": "InnoDB",
  "field_order": [
   "item_name",
+  "image",
   "description",
   "rate",
-  "units"
+  "units",
+  "route"
  ],
  "fields": [
   {
@@ -35,11 +38,22 @@
    "fieldname": "units",
    "fieldtype": "Int",
    "label": "Units"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
   }
  ],
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2020-11-25 22:56:53.698309",
+ "modified": "2020-12-02 15:45:05.531099",
  "modified_by": "Administrator",
  "module": "Accounting App",
  "name": "Item",
@@ -59,6 +73,7 @@
   }
  ],
  "quick_entry": 1,
+ "route": "items",
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1
