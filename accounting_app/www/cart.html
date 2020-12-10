@@ -1,0 +1,17 @@
+<h1>Cart</h1>
+
+{% for item in cart_items %}
+    <div class="py-8 row">
+        <div class="col-sm-1">
+            <img src="{{ item.image }}" alt="{{ item.name }}">
+        </div>
+        <div class="col">
+            <a class="font-size-lg" href="{{ item.route }}">{{ item.name }}</a>
+            <p class="text-muted">Rs {{ item.rate }}</p>
+        </div>
+    </div>
+{% endfor %}
+
+{% if not cart_items %}
+    <p>Cart is empty.</p>
+{% endif %}

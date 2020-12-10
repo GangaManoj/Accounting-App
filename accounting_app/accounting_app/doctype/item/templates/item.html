@@ -12,14 +12,16 @@
         <!-- <form action="www.google.com"> -->
         <button type="button" id="addToCart">Add to Cart</button> 
         <!-- </form> -->
-        <!-- <a href="www.google.com">Add to Cart</a> -->
+        <!-- <a href="" id="addToCart">Add to Cart</a> -->
     </div>
+    <a href="http://accounting:8000/cart">View Cart</a>
 </div>
 {% endblock %}
-
-<!-- <script type="text/javascript">
-    document.getElementById("addToCart").onclick = function () {
-        location.href = "";}
-</script> -->
-
 <!-- this is a sample default web page template -->
+
+{% block script %}
+<!-- js should be loaded in body! -->>
+<script>
+    {% include "accounting_app/accounting_app/doctype/item/templates/item.js" %}
+</script>
+{% endblock %}
