@@ -9,9 +9,18 @@
             <a class="font-size-lg" href="{{ item.route }}">{{ item.name }}</a>
             <p class="text-muted">Rs {{ item.rate }}</p>
         </div>
-    </div>
+        <div class="col">
+            <button type="button" id="removeFromCart" class="btn-light float-right">Delete</button> 
+        </div>
+    </div> 
 {% endfor %}
 
-{% if not cart_items %}
+{% if cart_items %}
+    <div class="font-weight-bold">Total: Rs.{{ sum[0]['sum'] }}</div>
+{% else %}
     <p>Cart is empty.</p>
 {% endif %}
+
+<div class="text-right">
+    <a href="http://accounting:8000/catalog">Continue Shopping</a>
+</div>

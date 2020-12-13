@@ -1,9 +1,13 @@
 frappe.ready(function(){
-    $('#addToCart').on('click', async function(){
-        let cart_doc = await frappe.get_doc({doctype:'Cart', item:'{{ doc }}'});
-        await cart_doc.insert();
-        console.log('Hello?');
+    $('#addToCart').on('click', function(){
+        frappe.call({
+            method: "accounting_app.accounting_app.doctype.item.item.add_item_to_cart",
+            args: {
+                "name": '{{ doc.name }}',
+                "image": '{{ doc.image }}',
+                "rate":  '{{ doc.rate }}',
+                "route": '{{ doc.route }}'
+            }
+        })
     });
-    console.log('{{ doc.name }}');
-    console.log('{{ doc }}');
 })
